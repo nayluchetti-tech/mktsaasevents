@@ -76,7 +76,7 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 2. Agency Retreat *(Postponed)*
+### 2. Pastors Retreat (1) *(Postponed)*
 **Event Date:** April 22-24, 2026 | **Location:** San Diego | **Type:** PRAY Retreat (Hosted)
 
 **Event Goals**
@@ -125,7 +125,7 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 4. Rangers vs. Yankees — VIP Game Night
+### 4. Rangers vs. Yankees — VIP Game Night (TBD)
 **Event Date:** April 27-29, 2026 | **Location:** Dallas, TX | **Type:** PRAY Mini Event (Hosted)
 
 **Event Goals**
@@ -235,7 +235,7 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 8. VIP Dinner + Astros vs. Rangers
+### 8. VIP Dinner + Astros vs. Rangers (TBD)
 **Event Date:** May 15-16, 2026 | **Location:** Houston, TX | **Type:** PRAY Mini Event (Hosted)
 
 **Event Goals**
@@ -283,7 +283,7 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 10. Rangers vs. Padres — Father's Day VIP Night
+### 10. Rangers vs. Padres — Father's Day VIP Night (TBD)
 **Event Date:** June 19-21, 2026 | **Location:** Dallas, TX | **Type:** PRAY Mini Event (Hosted)
 
 **Event Goals**
@@ -367,29 +367,7 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 13. PRAY Event - America Prays 250
-**Event Date:** June 20, 2026 | **Location:** TBD | **Type:** PRAY Event (Hosted)
-
-**Event Goals**
-| Metric | Target |
-|--------|--------|
-| Budget | $375,000 |
-| Target Attendees | 600 |
-| Target ROI | TBD (Signature Faith Event) |
-
-| Phase | Dates | Key Deliverables | Status |
-|-------|-------|------------------|--------|
-| Phase 1: Mission & Strategy | Feb 28 - Mar 28, 2026 | Event purpose approved, Success targets set, Budget approved, Faith guardrails documented | Pending |
-| Phase 2: Theme & Audience | Apr 11-25, 2026 | Visual identity finalized, Messaging framework aligned, ICP list finalized | Pending |
-| Phase 3: Systems & Planning | May 9-23, 2026 | Platforms configured, Registration & emails live | Pending |
-| Phase 4: Final Prep | Jun 6-19, 2026 | On-site experience flow finalized, Staffing plan locked | Pending |
-| Phase 5: Execution | Jun 20, 2026 | America Prays 250 event | Pending |
-| Phase 6: Follow-up | Jun 21-27, 2026 | 90-day nurture plan activated, Thank you emails sent | Pending |
-| Phase 7: ROI Analysis | Jul 20, 2026 | Performance report delivered | Pending |
-
----
-
-### 14. Pastor Retreat 2 of 2
+### 13. Pastors Retreat (2)
 **Event Date:** June 24-26, 2026 | **Location:** TBD | **Type:** PRAY Retreat (Hosted)
 
 **Event Goals**
@@ -411,7 +389,7 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 15. Q3 Sporting Event (July)
+### 14. Q3 Sporting Event — July (TBD)
 **Event Date:** July 31, 2026 | **Location:** TBD | **Type:** PRAY Mini Event (Hosted)
 
 **Event Goals**
@@ -438,7 +416,7 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 16. Q3 Sporting Event (September)
+### 15. Q3 Sporting Event — September (TBD)
 **Event Date:** September 1, 2026 | **Location:** TBD | **Type:** PRAY Mini Event (Hosted)
 
 **Event Goals**
@@ -465,7 +443,7 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 17. Family Reunion
+### 16. Family Reunion
 **Event Date:** October 27, 2026 | **Location:** TBD | **Type:** Conference (TBD participation)
 
 **Event Goals**
@@ -491,7 +469,7 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 18. November Sporting Event (RightNow Adjacent)
+### 17. November Sporting Event — RightNow Adjacent (TBD)
 **Event Date:** November 4-6, 2026 | **Location:** Dallas, TX | **Type:** PRAY Mini Event (Hosted)
 
 **Event Goals**
@@ -524,7 +502,6 @@ This document provides a unified view of all 2026 events with preparation milest
 |-------|--------|-------------|-------------------|
 | Apr 27-30 | Rangers vs. Yankees + Outcomes Conference | Dallas + Dallas | Same city — leverage overlap |
 | Jun 19-21 | Rangers vs. Padres + BCI Conference | Dallas + Atlanta | Split team |
-| Jun 19-20 | BCI Conference + America Prays 250 | Atlanta + TBD | Split team |
 
 ---
 
@@ -535,7 +512,7 @@ These events are in active phases or need immediate attention:
 | Event | Current Phase | Key Deliverables Due |
 |-------|---------------|----------------------|
 | NRB Convention | Phase 6 | Post-event nurture activated, Leads uploaded to CRM |
-| Agency Retreat | Phase 2 | Visual identity finalized, ICP list finalized |
+| Pastors Retreat (1) | Phase 2 | Visual identity finalized, ICP list finalized |
 | Rangers vs. Yankees | Phase 2 | Visual identity finalized, Invitation strategy approved |
 | America Reads the Bible | Phase 2 | Messaging aligned, Target personas defined |
 | MegaMetro | Phase 2 | Messaging aligned, Target personas defined |
@@ -551,9 +528,8 @@ These events are in active phases or need immediate attention:
 | Category | Events | Total Budget |
 |----------|--------|--------------|
 | Major Conferences | NRB, Outcomes | $484,850 |
-| PRAY Retreats | Agency, Pastor Retreat 2 | $160,000 |
-| Signature Events | America Prays 250 | $375,000 |
+| PRAY Retreats | Pastors Retreat (1), Pastors Retreat (2) | $160,000 |
 | Industry Conferences | Dunham, America Reads, MegaMetro, BCI, Family Reunion | $140,450 |
 | Mini Events / VIP | Rangers/Yankees, Astros/Rangers, Rangers/Padres, SBC, Q3 July & Sep, November | $212,200 |
 | National Events | America Prays National Mall | $50,000 |
-| **TOTAL** | **18 events** | **$1,422,500** |
+| **TOTAL** | **17 events** | **$1,047,500** |
