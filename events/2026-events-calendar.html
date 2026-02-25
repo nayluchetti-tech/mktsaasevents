@@ -48,15 +48,60 @@
     .site-header {
       background: var(--black);
       color: var(--white);
-      padding: 0 48px;
-      height: 68px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       position: sticky;
       top: 0;
       z-index: 300;
+    }
+    .hd-top {
+      padding: 0 48px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .hd-nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 5px 48px;
+      background: var(--black-mid);
       border-bottom: 2px solid var(--gold);
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      scrollbar-width: none;
+    }
+    .hd-nav::-webkit-scrollbar { display: none; }
+    .hd-nav-lbl {
+      font-size: 9px; font-weight: 700;
+      color: var(--gray-600);
+      text-transform: uppercase; letter-spacing: 0.6px;
+      padding-right: 8px; flex-shrink: 0;
+      white-space: nowrap;
+    }
+    .hd-nav-pill {
+      display: inline-flex; align-items: center;
+      font-size: 11px; font-weight: 700;
+      color: var(--gray-400);
+      padding: 3px 11px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.04);
+      text-decoration: none;
+      transition: all 0.15s;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .hd-nav-pill:hover {
+      background: var(--gold);
+      color: var(--black);
+      border-color: var(--gold);
+    }
+    .hd-nav-sep {
+      color: rgba(255,255,255,0.18);
+      font-size: 10px;
+      flex-shrink: 0;
+      padding: 0 2px;
     }
     .hd-left { display: flex; align-items: center; gap: 18px; }
     .hd-logo {
@@ -169,33 +214,33 @@
     ════════════════════════════════════════════════════════ */
     .year-section {
       background: var(--black);
-      padding: 36px 48px 40px;
-      border-bottom: 2px solid var(--gold-border);
+      padding: 14px 48px 18px;
+      border-bottom: 1px solid var(--gold-border);
     }
     .year-section-header {
       display: flex; align-items: center; justify-content: space-between;
-      margin-bottom: 28px;
+      margin-bottom: 10px;
     }
     .year-section-title {
-      display: flex; align-items: center; gap: 12px;
+      display: flex; align-items: center; gap: 10px;
     }
     .year-badge {
       background: var(--gold);
       color: var(--black);
-      font-size: 10px; font-weight: 800;
-      padding: 3px 10px; border-radius: 4px;
+      font-size: 9px; font-weight: 800;
+      padding: 2px 8px; border-radius: 4px;
       text-transform: uppercase; letter-spacing: 0.8px;
     }
     .year-section-title h2 {
-      font-size: 18px; font-weight: 800;
+      font-size: 13px; font-weight: 800;
       color: var(--white);
     }
     .year-legend {
-      display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+      display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
     }
     .legend-item {
-      display: flex; align-items: center; gap: 6px;
-      font-size: 11px; color: var(--gray-400); font-weight: 500;
+      display: flex; align-items: center; gap: 4px;
+      font-size: 10px; color: var(--gray-400); font-weight: 500;
     }
     .legend-dot {
       width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
@@ -206,12 +251,19 @@
     .ld-faith   { background: rgba(227,175,74,0.4); border: 1px solid var(--gold); }
     .ld-today   { background: var(--white); border: 2px solid var(--gold); }
 
-    /* Mini calendar grid — 4×3 */
+    /* Mini calendar grid — horizontal scrollable strip */
     .mini-cals-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 10px;
+      padding-bottom: 6px;
+      scrollbar-width: thin;
+      scrollbar-color: var(--gold-border) rgba(255,255,255,0.05);
     }
+    .mini-cals-grid::-webkit-scrollbar { height: 4px; }
+    .mini-cals-grid::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); border-radius: 2px; }
+    .mini-cals-grid::-webkit-scrollbar-thumb { background: var(--gold-border); border-radius: 2px; }
     .mini-cal-card {
       background: var(--black-soft);
       border: 1px solid rgba(255,255,255,0.07);
@@ -222,6 +274,8 @@
       display: block;
       color: inherit;
       text-decoration: none;
+      min-width: 126px;
+      flex-shrink: 0;
     }
     .mini-cal-card:hover { border-color: var(--gold-border); }
     .mini-cal-card.has-events { border-color: rgba(227,175,74,0.2); }
@@ -358,7 +412,7 @@
     main { max-width: 1400px; margin: 0 auto; padding: 32px 48px 40px; }
 
     .month-section { margin-bottom: 40px; }
-    .month-anchor { display: block; position: relative; top: -80px; }
+    .month-anchor { display: block; position: relative; top: -134px; }
     .month-header {
       display: flex; align-items: center; gap: 12px;
       margin-bottom: 18px;
@@ -570,7 +624,7 @@
       align-items: center;
       flex-wrap: wrap;
       position: sticky;
-      top: 68px;
+      top: 88px;
       z-index: 200;
     }
     .mnav-label {
@@ -609,18 +663,12 @@
     /* ═══════════════════════════════════════════════════════
        RESPONSIVE
     ════════════════════════════════════════════════════════ */
-    @media (max-width: 1200px) {
-      .mini-cals-grid { grid-template-columns: repeat(3, 1fr); }
-    }
     @media (max-width: 800px) {
-      .site-header, .stats-bar, .filters-bar,
+      .hd-top, .hd-nav, .stats-bar, .filters-bar,
       .year-section, .conflict-wrap, main, .budget-wrap { padding-left: 16px; padding-right: 16px; }
-      .mini-cals-grid { grid-template-columns: repeat(2, 1fr); }
+      .month-nav { padding-left: 16px; padding-right: 16px; }
       .events-grid { grid-template-columns: 1fr; }
       .hd-right { display: none; }
-    }
-    @media (max-width: 500px) {
-      .mini-cals-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -630,26 +678,31 @@
 <!--  HEADER                                                 -->
 <!-- ════════════════════════════════════════════════════════ -->
 <header class="site-header">
-  <div class="hd-left">
-    <div class="hd-logo">
-      <div class="logo-mark">P.</div>
+  <div class="hd-top">
+    <div class="hd-left">
+      <div class="hd-logo">
+        <div class="logo-mark">P.</div>
+        <div>
+          <div class="logo-text">PRAY<span>.COM</span></div>
+        </div>
+      </div>
+      <div class="hd-divider"></div>
       <div>
-        <div class="logo-text">PRAY<span>.COM</span></div>
+        <div class="hd-title">2026 Events Calendar</div>
+        <div class="hd-subtitle">Sales Team Reference · Ministry SaaS</div>
       </div>
     </div>
-    <div class="hd-divider"></div>
-    <div>
-      <div class="hd-title">2026 Events Calendar</div>
-      <div class="hd-subtitle">Sales Team Reference · Ministry SaaS</div>
+    <div class="hd-right">
+      <div class="hd-today">📅 February 24, 2026</div>
+      <div class="hd-counts">
+        <div class="hd-count"><strong>17</strong><span>Events</span></div>
+        <div class="hd-count"><strong>$1,047,500</strong><span>Budget</span></div>
+      </div>
     </div>
   </div>
-  <div class="hd-right">
-    <div class="hd-today">📅 February 24, 2026</div>
-    <div class="hd-counts">
-      <div class="hd-count"><strong>17</strong><span>Events</span></div>
-      <div class="hd-count"><strong>$1,047,500</strong><span>Budget</span></div>
-    </div>
-  </div>
+  <nav class="hd-nav" id="hd-nav">
+    <!-- Rendered by JS -->
+  </nav>
 </header>
 
 <!-- ═══════════════════════════════════════════════════════ -->
@@ -1285,13 +1338,26 @@ function render() {
 
 // ─── BUILD MONTH NAV ──────────────────────────────────────────────────────────
 function buildMonthNav() {
-  const nav = document.getElementById('month-nav');
-  if (!nav) return;
+  const nav   = document.getElementById('month-nav');
+  const hdNav = document.getElementById('hd-nav');
   const monthsWithEvents = MONTHS.filter(m => events.some(e => e.month === m.num));
-  nav.innerHTML = '<span class="mnav-label">Jump to</span>' +
-    monthsWithEvents.map(m =>
-      `<a href="#month-${m.num}" class="mnav-pill">${m.abbr}</a>`
-    ).join('');
+
+  // Sticky quick-nav bar (abbreviated)
+  if (nav) {
+    nav.innerHTML = '<span class="mnav-label">Jump to</span>' +
+      monthsWithEvents.map(m =>
+        `<a href="#month-${m.num}" class="mnav-pill">${m.abbr}</a>`
+      ).join('');
+  }
+
+  // Header top nav (full month names, gold-on-hover)
+  if (hdNav) {
+    hdNav.innerHTML = '<span class="hd-nav-lbl">Go to month</span>' +
+      monthsWithEvents.map((m, i) =>
+        (i > 0 ? '<span class="hd-nav-sep">·</span>' : '') +
+        `<a href="#month-${m.num}" class="hd-nav-pill">${m.name}</a>`
+      ).join('');
+  }
 }
 
 // ─── INIT ──────────────────────────────────────────────────────────────────────
