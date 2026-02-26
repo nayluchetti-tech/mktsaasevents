@@ -1013,8 +1013,8 @@ const events = [
     type:"conference", typeLabel:"Conference (Speaking)",
     chipClass:"chip-conf", barClass:"bar-conf",
     status:"complete", phaseDone:7, phaseActive:0, tbd:false, postponed:false,
-    budget:"$45,000", attendees:"35",
-    mqls:"30", sqls:"13.5", deals:"1.89", pipeline:"$948K", revenue:"$81K", roi:"0.81×",
+    budget:"$45,000", attendees:"29",
+    mqls:"28", sqls:"28", deals:"0", pipeline:"$0", revenue:"$0", roi:"0×",
     conflict:null
   },
   {
@@ -1035,17 +1035,17 @@ const events = [
     type:"conference", typeLabel:"Conference (Booth + Speaking)",
     chipClass:"chip-conf", barClass:"bar-conf",
     status:"inprogress", phaseDone:5, phaseActive:6, tbd:false, postponed:false,
-    budget:"$450,000", attendees:"6,000",
+    budget:"$400,000", attendees:"6,500",
     mqls:"655", sqls:"307.9", deals:"43.1", pipeline:"$4.89M", revenue:"$2.89M", roi:"5.41×",
     conflict:null
   },
   {
-    id:4, name:"April Event (TBD)",
-    dateStr:"Apr 27–29, 2026", month:4, startDay:27, endDay:29, quarter:"Q2",
-    location:"Dallas, TX",
+    id:4, name:"April VIP Night — Rangers vs. Yankees",
+    dateStr:"Apr 27, 2026", month:4, startDay:27, endDay:27, quarter:"Q2",
+    location:"Dallas, TX — Globe Life Field",
     type:"sports", typeLabel:"PRAY Mini Event — Sports / VIP",
     chipClass:"chip-sport", barClass:"bar-sport",
-    status:"inprogress", phaseDone:1, phaseActive:2, tbd:true, postponed:false,
+    status:"inprogress", phaseDone:1, phaseActive:2, tbd:false, postponed:false,
     budget:"$30,000", attendees:"23",
     mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
     conflict:"⚠ Outcomes Conference (Apr 28–30, Dallas) — same city, coordinate teams"
@@ -1053,7 +1053,7 @@ const events = [
   {
     id:5, name:"America Reads the Bible",
     dateStr:"Apr 20–21, 2026", month:4, startDay:20, endDay:21, quarter:"Q2",
-    location:"Washington, D.C.",
+    location:"Washington, D.C. — Museum of the Bible",
     type:"conference", typeLabel:"Conference (TBD Participation)",
     chipClass:"chip-conf", barClass:"bar-conf",
     status:"inprogress", phaseDone:1, phaseActive:2, tbd:false, postponed:false,
@@ -1084,12 +1084,12 @@ const events = [
     conflict:"⚠ April Event (Apr 27–29, Dallas) — same city"
   },
   {
-    id:8, name:"May Event (TBD)",
+    id:8, name:"May VIP Night — Astros vs. Rangers",
     dateStr:"May 15–16, 2026", month:5, startDay:15, endDay:16, quarter:"Q2",
-    location:"Houston, TX",
+    location:"Houston, TX — Minute Maid Park",
     type:"sports", typeLabel:"PRAY Mini Event — Sports / VIP",
     chipClass:"chip-sport", barClass:"bar-sport",
-    status:"inprogress", phaseDone:0, phaseActive:1, tbd:true, postponed:false,
+    status:"inprogress", phaseDone:0, phaseActive:1, tbd:false, postponed:false,
     budget:"$30,000", attendees:"23",
     mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
     conflict:null
@@ -1097,7 +1097,7 @@ const events = [
   {
     id:9, name:"America Prays National Mall",
     dateStr:"May 18, 2026", month:5, startDay:18, endDay:18, quarter:"Q2",
-    location:"Philadelphia, PA",
+    location:"Philadelphia, PA — Independence Mall",
     type:"faith", typeLabel:"America Prays (Hosted)",
     chipClass:"chip-faith", barClass:"bar-faith",
     status:"inprogress", phaseDone:0, phaseActive:1, tbd:false, postponed:false,
@@ -1106,12 +1106,12 @@ const events = [
     conflict:null
   },
   {
-    id:10, name:"June Event (TBD)",
+    id:10, name:"June VIP Night — Rangers vs. Padres",
     dateStr:"Jun 19–21, 2026", month:6, startDay:19, endDay:21, quarter:"Q2",
-    location:"Dallas, TX",
+    location:"Dallas, TX — Globe Life Field",
     type:"sports", typeLabel:"PRAY Mini Event — Sports / VIP",
     chipClass:"chip-sport", barClass:"bar-sport",
-    status:"pending", phaseDone:0, phaseActive:0, tbd:true, postponed:false,
+    status:"pending", phaseDone:0, phaseActive:0, tbd:false, postponed:false,
     budget:"$30,000", attendees:"18",
     mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
     conflict:null
@@ -1191,6 +1191,17 @@ const events = [
     status:"pending", phaseDone:0, phaseActive:0, tbd:true, postponed:false,
     budget:"$30,000", attendees:"23",
     mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
+    conflict:null
+  },
+  {
+    id:18, name:"Agency Black Ops Summit",
+    dateStr:"Jan 26–28, 2026", month:1, startDay:26, endDay:28, quarter:"Q1",
+    location:"San Diego, CA — The Andaz",
+    type:"conference", typeLabel:"Conference (Cancelled)",
+    chipClass:"chip-conf", barClass:"bar-conf",
+    status:"postponed", phaseDone:0, phaseActive:0, tbd:false, postponed:true,
+    budget:"$80,000", attendees:"—",
+    mqls:null, sqls:null, deals:null, pipeline:null, revenue:null, roi:null,
     conflict:null
   }
 ];

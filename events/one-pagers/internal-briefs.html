@@ -295,13 +295,13 @@ const events = [
     type:"conference", typeLabel:"Conference (Speaking)",
     chipClass:"chip-conf",
     status:"complete", phaseDone:7, phaseActive:0, tbd:false,
-    budget:"$45,000", attendees:"35",
-    mqls:"30", sqls:"13.5", deals:"1.89", pipeline:"$948K", revenue:"$81K", roi:"0.81×",
+    budget:"$45,000", attendees:"29",
+    mqls:"28", sqls:"28", deals:"0", pipeline:"$0", revenue:"$0", roi:"0×",
     conflict:null,
     notes:[
-      {cls:"n-action", icon:"✓", text:"<strong>All 7 phases complete.</strong> Full post-event data available in CRM. Use this event as an ROI benchmark for smaller speaking engagements."},
-      {cls:"n-info",   icon:"📊", text:"Final ROI: 0.81× — strong relationship / brand-building event. 30 MQLs collected; follow-up cadence should be in final stage."},
-      {cls:"n-neutral",icon:"📋", text:"AE Assigned: Review closed-won conversion data to validate pipeline assumptions for future Dunham-style events."}
+      {cls:"n-action", icon:"✓", text:"<strong>All 7 phases complete.</strong> Actuals: 29 attendees, 28 MQLs, 28 SQLs, 0 deals, $0 revenue, ROI 0×. Use this event as a benchmark for smaller speaking engagements."},
+      {cls:"n-info",   icon:"📊", text:"PRAY Team (7): Matthew Potter, Rick Killingsworth, Victor Harris, Aaron Magnuson, Nate Roemer, Jason Rosoff, Breanne Laird. Elevator Pitch: <em>\"PRAY.COM helps ministries and faith-based organizations reach more people, grow sustainably, and measure spiritual impact.\"</em>"},
+      {cls:"n-neutral",icon:"📋", text:"Budget: $45,000 (Diamond Sponsorship). Activations: AI Pre-Summit Masterclass, Lunch &amp; Learn Breakout, Exclusive Disney Dinner Experience."}
     ]
   },
   {
@@ -328,36 +328,36 @@ const events = [
     type:"conference", typeLabel:"Conference (Booth + Speaking)",
     chipClass:"chip-conf",
     status:"inprogress", phaseDone:5, phaseActive:6, tbd:false,
-    budget:"$450,000", attendees:"6,000",
+    budget:"$400,000", attendees:"6,500",
     mqls:"655", sqls:"307.9", deals:"43.1", pipeline:"$4.89M", revenue:"$2.89M", roi:"5.41×",
     conflict:null,
     notes:[
       {cls:"n-action", icon:"🔴", text:"<strong>PRIORITY — Phase 6 Active (Post-Event Follow-Up):</strong> 655 MQLs must be entered into CRM within 72 hours of show close. All badge scans exported and segmented by priority tier."},
       {cls:"n-action", icon:"📧", text:"Follow-up email sequences (Tier 1, 2, 3) must launch within 48 hours of event close. AEs take ownership of Tier 1 accounts immediately."},
-      {cls:"n-info",   icon:"💰", text:"Largest event of Q1 at $450K budget. Projected ROI: 5.41× with $4.89M pipeline. All demo slots tracked and assigned to AEs."},
-      {cls:"n-neutral",icon:"🎙️", text:"Speaking session(s) completed. Ensure recordings and slide decks are shared with marketing for content repurposing."}
+      {cls:"n-info",   icon:"💰", text:"Largest event of Q1 at $400K budget. Booth: <strong>Delta Lobby A &amp; B (DL-B)</strong>. Speaking session: <strong>\"From Parables to Prompts: Storytelling in the Age of AI.\"</strong> All demo slots tracked and assigned to AEs."},
+      {cls:"n-neutral",icon:"🎙️", text:"Speaking session completed. Ensure recordings and slide decks are shared with marketing for content repurposing."}
     ]
   },
   {
-    id:4, name:"April Event (TBD)",
-    dateStr:"Apr 27–29, 2026", month:4, quarter:"Q2",
-    location:"Dallas, TX",
+    id:4, name:"April VIP Night — Rangers vs. Yankees",
+    dateStr:"Apr 27, 2026", month:4, quarter:"Q2",
+    location:"Dallas, TX — Globe Life Field",
     type:"sports", typeLabel:"Sports / VIP Mini Event",
     chipClass:"chip-sport",
-    status:"inprogress", phaseDone:1, phaseActive:2, tbd:true,
+    status:"inprogress", phaseDone:1, phaseActive:2, tbd:false,
     budget:"$30,000", attendees:"23",
     mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
-    conflict:"⚠ Scheduling conflict: Outcomes Conference (Apr 28–30) is also in Dallas. Coordinate team logistics — same-city overlap is an opportunity.",
+    conflict:"⚠ Outcomes Conference (Apr 28–30, Dallas) — same city, coordinate teams",
     notes:[
-      {cls:"n-tbd",    icon:"⚠️", text:"<strong>Event TBD:</strong> Specific game/matchup not yet confirmed. Game selection, ticket block, and venue details pending. Update once finalized."},
-      {cls:"n-conflict",icon:"⚠️",text:"<strong>CONFLICT:</strong> Outcomes Conference (Apr 28–30) is also in Dallas. Opportunity to cross-invite select Outcomes contacts to the VIP night. Coordinate AE coverage."},
-      {cls:"n-action", icon:"📋", text:"Phase 2 (Planning & Registration) active. Finalize: guest list of 23, transportation, hospitality suite if applicable, PRAY.COM branded gifting."}
+      {cls:"n-info",    icon:"🏟️", text:"<strong>Confirmed:</strong> Rangers vs. Yankees · April 27, 2026 · Globe Life Field, Arlington, TX. VIP experience includes premium suite seats, hosted hospitality, and PRAY.COM branded gifting."},
+      {cls:"n-conflict",icon:"⚠️",  text:"<strong>CONFLICT:</strong> Outcomes Conference (Apr 28–30) is also in Dallas. Opportunity to cross-invite select Outcomes contacts to the VIP night. Coordinate AE coverage for both events."},
+      {cls:"n-action",  icon:"📋", text:"<strong>Phase 2 (Planning &amp; Registration) active.</strong> Finalize: 23-person guest list, ticket block, transportation, hospitality suite, and PRAY.COM branded gifting. Coordinate with Dallas AE."}
     ]
   },
   {
     id:5, name:"America Reads the Bible",
     dateStr:"Apr 20–21, 2026", month:4, quarter:"Q2",
-    location:"Washington, D.C.",
+    location:"Washington, D.C. — Museum of the Bible",
     type:"conference", typeLabel:"Conference (TBD Participation)",
     chipClass:"chip-conf",
     status:"inprogress", phaseDone:1, phaseActive:2, tbd:false,
@@ -406,25 +406,25 @@ const events = [
     ]
   },
   {
-    id:8, name:"May Event (TBD)",
+    id:8, name:"May VIP Night — Astros vs. Rangers",
     dateStr:"May 15–16, 2026", month:5, quarter:"Q2",
-    location:"Houston, TX",
+    location:"Houston, TX — Minute Maid Park",
     type:"sports", typeLabel:"Sports / VIP Mini Event",
     chipClass:"chip-sport",
-    status:"inprogress", phaseDone:0, phaseActive:1, tbd:true,
+    status:"inprogress", phaseDone:0, phaseActive:1, tbd:false,
     budget:"$30,000", attendees:"23",
     mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
     conflict:null,
     notes:[
-      {cls:"n-tbd",   icon:"⚠️", text:"<strong>Event TBD:</strong> Game/matchup and venue in Houston, TX not yet confirmed. Phase 1 (Research) active — evaluate Houston-area sporting events in May 2026 timeframe."},
-      {cls:"n-action",icon:"📋", text:"Once confirmed: finalize 23-person guest list, ticket block, hospitality suite, and branded experience details. Coordinate with Houston-area AE."},
+      {cls:"n-info",   icon:"🏟️", text:"<strong>Confirmed:</strong> Astros vs. Rangers · May 15–16, 2026 · Minute Maid Park, Houston, TX. VIP experience includes premium seats, hosted dinner, and PRAY.COM branded experience."},
+      {cls:"n-action", icon:"📋", text:"Phase 1 (Research) active. Finalize: 23-person guest list, ticket block, hospitality suite, and branded experience details. Coordinate with Houston-area AE."},
       {cls:"n-neutral",icon:"💡", text:"Houston market — strong presence of large churches and Christian nonprofits. VIP list should prioritize high-potential local accounts."}
     ]
   },
   {
     id:9, name:"America Prays National Mall",
     dateStr:"May 18, 2026", month:5, quarter:"Q2",
-    location:"Philadelphia, PA",
+    location:"Philadelphia, PA — Independence Mall",
     type:"faith", typeLabel:"America Prays (Hosted)",
     chipClass:"chip-faith",
     status:"inprogress", phaseDone:0, phaseActive:1, tbd:false,
@@ -438,18 +438,19 @@ const events = [
     ]
   },
   {
-    id:10, name:"June Event (TBD)",
+    id:10, name:"June VIP Night — Rangers vs. Padres",
     dateStr:"Jun 19–21, 2026", month:6, quarter:"Q2",
-    location:"Dallas, TX",
+    location:"Dallas, TX — Globe Life Field",
     type:"sports", typeLabel:"Sports / VIP Mini Event",
     chipClass:"chip-sport",
-    status:"pending", phaseDone:0, phaseActive:0, tbd:true,
+    status:"pending", phaseDone:0, phaseActive:0, tbd:false,
     budget:"$30,000", attendees:"18",
     mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
     conflict:null,
     notes:[
-      {cls:"n-tbd",    icon:"⚠️", text:"<strong>Event TBD:</strong> Game/matchup in Dallas not yet confirmed. No phases started. Decision needed by April 2026 to allow proper lead time."},
-      {cls:"n-action", icon:"📋", text:"Once confirmed: build 18-person invite list, secure ticket block, arrange hospitality. Dallas AE takes ownership of this event."}
+      {cls:"n-info",   icon:"🏟️", text:"<strong>Confirmed:</strong> Rangers vs. Padres (Father's Day Weekend) · June 19–21, 2026 · Globe Life Field, Arlington, TX. Leverage the Father's Day angle for personalized invitations and themed hospitality."},
+      {cls:"n-action", icon:"📋", text:"No phases started. Build 18-person invite list, secure ticket block, arrange Father's Day themed hospitality. Dallas AE takes ownership of this event."},
+      {cls:"n-neutral",icon:"💡", text:"Father's Day weekend creates a natural theme for the invitation. Consider gifting, hospitality elements, and messaging that celebrate ministry leaders as fathers and leaders."}
     ]
   },
   {
@@ -562,6 +563,21 @@ const events = [
       {cls:"n-tbd",   icon:"⚠️", text:"<strong>Event TBD:</strong> Planned adjacent to the RightNow Media conference in Dallas (Nov 4–6). Game/matchup TBD — leverage Dallas Cowboys, Mavericks, or Stars schedule."},
       {cls:"n-info",  icon:"💡", text:"Strategic positioning: RightNow Media attendees are prime PRAY.COM prospects (church media & ministry tech buyers). Cross-leverage event timing for maximum audience exposure."},
       {cls:"n-action",icon:"📋", text:"Coordinate RightNow Media attendance alongside VIP sporting event. Ideal format: attend RightNow by day, VIP event evening of Nov 5. Guest list from RightNow attendees."}
+    ]
+  },
+  {
+    id:18, name:"Agency Black Ops Summit",
+    dateStr:"Jan 26–28, 2026", month:1, quarter:"Q1",
+    location:"San Diego, CA — The Andaz",
+    type:"conference", typeLabel:"Conference (Cancelled)",
+    chipClass:"chip-conf",
+    status:"postponed", phaseDone:0, phaseActive:0, tbd:false,
+    budget:"$80,000", attendees:"—",
+    mqls:null, sqls:null, deals:null, pipeline:null, revenue:null, roi:null,
+    conflict:null,
+    notes:[
+      {cls:"n-tbd",    icon:"🚫", text:"<strong>CANCELLED:</strong> The Agency Black Ops Summit (originally Jan 26–28, 2026 at The Andaz San Diego) has been cancelled. Budget of $80,000 was not spent. No MQLs or pipeline associated."},
+      {cls:"n-neutral",icon:"📋", text:"Event removed from active 2026 calendar. Agency partner relationships should be nurtured through other 2026 event touchpoints (Pastors Retreats, VIP sporting events)."}
     ]
   }
 ];
