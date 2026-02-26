@@ -156,6 +156,15 @@
       max-width: 560px; margin-top: 4px;
     }
 
+    /* ─── EVENT LOGO (branded retreats / Black Ops Summit) ──────── */
+    .op-event-logo {
+      position: absolute; right: 36px; top: 26px; z-index: 2;
+    }
+    .ev-logo-img {
+      height: 108px; width: auto;
+      filter: drop-shadow(0 2px 10px rgba(0,0,0,0.18));
+    }
+
     /* Value props */
     .op-section { padding: 24px 36px; border-bottom: 1px solid var(--gray-100); flex-shrink: 0; }
     .op-section-title {
@@ -282,24 +291,25 @@ const events = [
     dateStr:"Apr 22–24, 2026", location:"San Diego, CA — The Andaz", quarter:"Q2",
     typeLabel:"PRAY Retreat · Hosted", chipClass:"chip-ret",
     tbd:false,
-    eyebrow:"An Exclusive PRAY.COM Invitation — Black Ops Summit",
-    headline:"Faith, Focus, and Fearless Leadership",
-    tagline:"You've been personally selected to join a small group of ministry leaders for an intimate, hosted retreat in San Diego — a weekend of fellowship, strategic conversation, and bold experiences led by a retired Navy SEAL.",
+    eventLogo:"../black%20ops%20summit/Black%20Ops%20Summit%20Logos-01%201.png",
+    eyebrow:"Mission Briefing — Black Ops Summit 2026",
+    headline:"Faith. Focus. Execution.",
+    tagline:"You've been personally selected to join an elite group of senior ministry leaders for three days of tactical leadership, deep fellowship, and bold experiences — facilitated by a retired Navy SEAL. This is not a conference. It's a mission briefing.",
     eventSection:{
-      icon:"🌊",
-      title:"An Extraordinary Weekend with PRAY.COM Leadership",
-      text:"PRAY.COM is hosting a curated group of senior ministry leaders for an exclusive three-day retreat at The Andaz in San Diego, CA. Led by Commander Jimmy May (retired Navy SEAL), the Black Ops Summit combines deep community, adventurous experiences, and honest conversations about digital ministry leadership — in a setting designed to inspire and renew. All expenses are fully hosted by PRAY.COM.",
-      detail:"By Invitation Only · Apr 22–24, 2026 · The Andaz, San Diego, CA · Black Ops Summit (1 of 2)"
+      icon:"🎖️",
+      title:"This Is Not a Conference — It's a Mission Briefing",
+      text:"The Black Ops Summit brings together the nation's top senior pastors for an unprecedented leadership experience at The Andaz San Diego. Facilitated by Commander Jimmy May (retired U.S. Navy SEAL), this invitation-only gathering fuses Navy SEAL–tested leadership principles with the shared mission of advancing the Gospel. Over three strategic days you'll forge unbreakable bonds with ministry peers, sharpen your strategic clarity, and leave equipped to lead with greater discipline and purpose — fully hosted by PRAY.COM at no cost to you.",
+      detail:"By Invitation Only · Apr 22–24, 2026 · The Andaz, 600 F Street, San Diego, CA · Hosted by PRAY.COM"
     },
     valueProps:[
-      {icon:"🤝", title:"Small & Personal", desc:"Limited to 18 invited leaders — this is not a conference. Expect real conversations and genuine relationships."},
-      {icon:"🎯", title:"Led by a Navy SEAL", desc:"Facilitator Commander Jimmy May brings lessons from elite military leadership to help you lead with courage and conviction."},
-      {icon:"💡", title:"Ministry Strategy", desc:"Honest conversations about where digital ministry is headed and how your organization can lead boldly."},
-      {icon:"☀️", title:"Fully Hosted", desc:"All travel, accommodations, meals, and adventures are provided by PRAY.COM at no cost to you."}
+      {icon:"🎖️", title:"Navy SEAL–Led Leadership", desc:"Commander Jimmy May (ret. Navy SEAL) facilitates the entire experience — bringing elite military precision and leadership principles so you can lead your ministry with greater clarity, boldness, and execution."},
+      {icon:"🤝", title:"18 Leaders. By Invitation Only.", desc:"Strictly invitation-only and capped at 18 senior pastors. Every guest is hand-selected. Expect the kind of real conversation that only happens when the right people are in the right room."},
+      {icon:"⚔️", title:"Tactical Training + Command Keynote", desc:"Day 2 includes live precision tactical training at the range, BBQ field provisions, and an evening Navy SEAL command keynote dinner. Hebrews 10:24 — 'Spur one another on toward love and good deeds.'"},
+      {icon:"☀️", title:"Fully Hosted — Zero Cost to You", desc:"All travel, accommodations, meals, training, and activities at The Andaz San Diego are covered entirely by PRAY.COM. Your only mission is to show up ready."}
     ],
-    ctaHeadline:"Your Invitation Awaits",
-    ctaSub:"Space is extremely limited. Contact your PRAY.COM representative to confirm your spot at the Black Ops Summit in San Diego, April 22–24, 2026.",
-    ctaLabel:"Confirm My Spot"
+    ctaHeadline:"Accept Your Mission Briefing — Space Is Limited",
+    ctaSub:"The Black Ops Summit is invitation-only and capped at 18 ministry leaders. Contact your PRAY.COM representative to accept your invitation and lock in your spot in San Diego, April 22–24, 2026.",
+    ctaLabel:"Accept My Invitation"
   },
   {
     id:3, name:"NRB International Christian Media Convention",
@@ -690,6 +700,11 @@ function buildPage(ev, idx) {
       <span><strong>Event Details TBD</strong> — The game/matchup/venue for this event is not yet confirmed. The one-pager content reflects our planned experience. Final details will be shared with invited guests directly.</span>
     </div>` : '';
 
+  const eventLogoHtml = ev.eventLogo ? `
+    <div class="op-event-logo">
+      <img src="${ev.eventLogo}" alt="${ev.name} Logo" class="ev-logo-img">
+    </div>` : '';
+
   const vpGrid = ev.valueProps.map(vp => `
     <div class="vp-item">
       <div class="vp-icon">${vp.icon}</div>
@@ -717,8 +732,9 @@ function buildPage(ev, idx) {
       </div>
 
       <div class="op-hero">
-        <div class="op-hero-accent"></div>
+        ${ev.eventLogo ? '' : '<div class="op-hero-accent"></div>'}
         ${tbdBanner}
+        ${eventLogoHtml}
         <div class="op-eyebrow">${ev.eyebrow}</div>
         <div class="op-event-name">${ev.headline}</div>
         <div class="op-event-meta">
