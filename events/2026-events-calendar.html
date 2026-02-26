@@ -103,6 +103,63 @@
       flex-shrink: 0;
       padding: 0 2px;
     }
+
+    /* ═══════════════════════════════════════════════════════
+       RESOURCES BAR
+    ════════════════════════════════════════════════════════ */
+    .resources-bar {
+      background: var(--black-soft);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 7px 48px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .res-lbl {
+      font-size: 9px; font-weight: 700;
+      color: var(--gray-600);
+      text-transform: uppercase; letter-spacing: 0.6px;
+      padding-right: 4px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .res-btn {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 11px; font-weight: 600;
+      color: var(--gray-400);
+      padding: 4px 12px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.04);
+      text-decoration: none;
+      transition: all 0.15s;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .res-btn:hover {
+      background: var(--gold);
+      color: var(--black);
+      border-color: var(--gold);
+    }
+    .res-sep {
+      color: rgba(255,255,255,0.12);
+      font-size: 10px;
+      flex-shrink: 0;
+      padding: 0 2px;
+    }
+    .res-ramp {
+      margin-left: auto;
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 11px; font-weight: 600;
+      color: var(--gold);
+      background: var(--gold-muted);
+      border: 1px solid var(--gold-border);
+      border-radius: 20px;
+      padding: 4px 12px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
     .hd-left { display: flex; align-items: center; gap: 18px; }
     .hd-logo {
       display: flex;
@@ -696,7 +753,7 @@
       <div class="hd-today">📅 February 24, 2026</div>
       <div class="hd-counts">
         <div class="hd-count"><strong>17</strong><span>Events</span></div>
-        <div class="hd-count"><strong>$1,047,500</strong><span>Budget</span></div>
+        <div class="hd-count"><strong>$1,052,650</strong><span>Budget</span></div>
       </div>
     </div>
   </div>
@@ -704,6 +761,25 @@
     <!-- Rendered by JS -->
   </nav>
 </header>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--  RESOURCES BAR                                          -->
+<!-- ════════════════════════════════════════════════════════ -->
+<div class="resources-bar">
+  <span class="res-lbl">Resources</span>
+  <a class="res-btn" href="https://prayinc.atlassian.net/wiki/spaces/MARK/pages/4889149441/2026+Event+Tracker" target="_blank">📄 Confluence Pages</a>
+  <span class="res-sep">·</span>
+  <a class="res-btn" href="https://prayinc.atlassian.net/jira/plans/247/scenarios/248/timeline?vid=286" target="_blank">✅ Jira Tasks</a>
+  <span class="res-sep">·</span>
+  <a class="res-btn" href="https://drive.google.com/drive/u/0/folders/1-Q0qwO-yytuJ18P67QooHCNP7R4EAWUE?hl=pt-br" target="_blank">📁 Drive Repositories</a>
+  <span class="res-sep">·</span>
+  <a class="res-btn" href="https://nayluchetti-tech.github.io/mktsaasevents/events/one-pagers/internal-briefs.html" target="_blank">🔒 Internal One-Pagers</a>
+  <span class="res-sep">·</span>
+  <a class="res-btn" href="https://nayluchetti-tech.github.io/mktsaasevents/events/one-pagers/external-onepagers.html" target="_blank">🌐 Customer-Facing One-Pagers</a>
+  <span class="res-sep">·</span>
+  <a class="res-btn" href="https://app.hubspot.com/reports-dashboard/2592247/view/16725333" target="_blank">📊 HubSpot Dashboard</a>
+  <span class="res-ramp">💳 Event purchases → Ramp Card</span>
+</div>
 
 <!-- ═══════════════════════════════════════════════════════ -->
 <!--  STATS BAR                                              -->
@@ -714,7 +790,7 @@
     <span class="stat-lbl">Total Events</span>
   </div>
   <div class="stat-item">
-    <span class="stat-val">$1,047,500</span>
+    <span class="stat-val">$1,052,650</span>
     <span class="stat-lbl">Total Budget</span>
   </div>
   <div class="stat-item">
