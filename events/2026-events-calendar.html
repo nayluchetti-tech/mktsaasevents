@@ -1494,7 +1494,8 @@ function buildMonthNav() {
       monthsWithEvents.map((m, i) =>
         (i > 0 ? '<span class="hd-nav-sep">·</span>' : '') +
         `<a href="#month-${m.num}" class="hd-nav-pill">${m.name}</a>`
-      ).join('');
+      ).join('') +
+      '<a href="#top" class="hd-top-pill">↑ Top</a>';
   }
 }
 
