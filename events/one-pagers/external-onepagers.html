@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PRAY.COM 2026 — Event One-Pagers</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
   <style>
     :root {
       --black:       #0B0C0D;
@@ -25,7 +26,7 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
       background: #D8D8D6;
       color: var(--black);
       font-size: 13px;
@@ -101,6 +102,7 @@
     .oh-logo-text { font-size: 15px; font-weight: 800; color: var(--white); letter-spacing: 0.3px; }
     .oh-logo-text span { color: var(--gold); }
     .oh-tagline { font-size: 10px; color: var(--gray-400); margin-top: 1px; }
+    .oh-brand-logo { height: 22px; width: auto; display: block; margin-bottom: 3px; }
     .oh-right { text-align: right; }
     .oh-label { font-size: 9px; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.5px; }
     .oh-year  { font-size: 18px; font-weight: 900; color: var(--gold); line-height: 1; }
@@ -289,7 +291,7 @@ const events = [
   {
     id:2, name:"Black Ops Summit (1/2)",
     dateStr:"Apr 22–24, 2026", location:"San Diego, CA — The Andaz", quarter:"Q2",
-    typeLabel:"PRAY Retreat · Hosted", chipClass:"chip-ret",
+    typeLabel:null, chipClass:"chip-ret",
     tbd:false,
     eventLogo:"../black%20ops%20summit/Black%20Ops%20Summit%20Logos-01%201.png",
     eyebrow:"Mission Briefing — Black Ops Summit 2026",
@@ -309,7 +311,8 @@ const events = [
     ],
     ctaHeadline:"Accept Your Mission Briefing — Space Is Limited",
     ctaSub:"The Black Ops Summit is invitation-only and capped at 18 ministry leaders. Contact your PRAY.COM representative to accept your invitation and lock in your spot in San Diego, April 22–24, 2026.",
-    ctaLabel:"Accept My Invitation"
+    ctaLabel:"Accept My Invitation",
+    ctaLink:"https://events.pray.com/black-ops-summit-claim-your-spot"
   },
   {
     id:3, name:"NRB International Christian Media Convention",
@@ -719,9 +722,8 @@ function buildPage(ev, idx) {
 
       <div class="op-header">
         <div class="oh-logo">
-          <div class="oh-logo-mark">P.</div>
           <div>
-            <div class="oh-logo-text">PRAY<span>.COM</span></div>
+            <img src="../PRAY%20Brand/praycom_logo_primary@3x.png" alt="PRAY.COM" class="oh-brand-logo">
             <div class="oh-tagline">The World's #1 Prayer &amp; Devotional Platform</div>
           </div>
         </div>
@@ -740,7 +742,7 @@ function buildPage(ev, idx) {
         <div class="op-event-meta">
           <div class="op-meta-item"><span class="mi-icon">📅</span><strong>${ev.dateStr}</strong></div>
           <div class="op-meta-item"><span class="mi-icon">📍</span><strong>${ev.location}</strong></div>
-          <span class="op-type-chip ${ev.chipClass}">${ev.typeLabel}</span>
+          ${ev.typeLabel ? `<span class="op-type-chip ${ev.chipClass}">${ev.typeLabel}</span>` : ''}
         </div>
         <div class="op-tagline-block">${ev.tagline}</div>
       </div>
@@ -768,7 +770,7 @@ function buildPage(ev, idx) {
           <div class="cta-sub">${ev.ctaSub}</div>
         </div>
         <div class="cta-right">
-          <a href="https://pray.com" class="cta-btn">→ ${ev.ctaLabel}</a>
+          <a href="${ev.ctaLink || 'https://pray.com'}" class="cta-btn">→ ${ev.ctaLabel}</a>
           <div class="cta-contact">
             <a href="mailto:sales@pray.com">sales@pray.com</a> &nbsp;·&nbsp; pray.com
           </div>
