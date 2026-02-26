@@ -104,13 +104,32 @@
       flex-shrink: 0;
       padding: 0 2px;
     }
+    .hd-top-pill {
+      margin-left: auto;
+      display: inline-flex; align-items: center;
+      font-size: 11px; font-weight: 700;
+      color: var(--gold);
+      padding: 4px 13px;
+      border-radius: 20px;
+      border: 1px solid var(--gold-border);
+      background: var(--gold-muted);
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .hd-top-pill:hover {
+      background: var(--gold);
+      color: var(--black);
+      border-color: var(--gold);
+    }
 
     /* ═══════════════════════════════════════════════════════
        RESOURCES BAR
     ════════════════════════════════════════════════════════ */
     .resources-bar {
-      background: var(--black-soft);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
+      background: #131823;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
       padding: 7px 48px;
       display: flex;
       align-items: center;
@@ -153,7 +172,6 @@
       padding: 0 2px;
     }
     .res-ramp {
-      margin-left: auto;
       display: inline-flex; align-items: center; gap: 6px;
       font-size: 11px; font-weight: 700;
       color: #4ADE80;
@@ -803,26 +821,23 @@
   <nav class="hd-nav" id="hd-nav">
     <!-- Rendered by JS -->
   </nav>
+  <div class="resources-bar">
+    <span class="res-lbl">Resources</span>
+    <a class="res-btn res-btn-confluence" href="https://prayinc.atlassian.net/wiki/spaces/MARK/pages/4889149441/2026+Event+Tracker" target="_blank">📄 Confluence Pages</a>
+    <span class="res-sep">·</span>
+    <a class="res-btn res-btn-jira" href="https://prayinc.atlassian.net/jira/plans/247/scenarios/248/timeline?vid=286" target="_blank">✅ Jira Tasks</a>
+    <span class="res-sep">·</span>
+    <a class="res-btn res-btn-drive" href="https://drive.google.com/drive/u/0/folders/1-Q0qwO-yytuJ18P67QooHCNP7R4EAWUE?hl=pt-br" target="_blank">📁 Drive Repositories</a>
+    <span class="res-sep">·</span>
+    <a class="res-btn res-btn-internal" href="https://nayluchetti-tech.github.io/mktsaasevents/events/one-pagers/internal-briefs.html" target="_blank">🔒 Internal One-Pagers</a>
+    <span class="res-sep">·</span>
+    <a class="res-btn res-btn-external" href="https://nayluchetti-tech.github.io/mktsaasevents/events/one-pagers/external-onepagers.html" target="_blank">🌐 Customer-Facing One-Pagers</a>
+    <span class="res-sep">·</span>
+    <a class="res-btn res-btn-hubspot" href="https://app.hubspot.com/reports-dashboard/2592247/view/16725333" target="_blank">📊 HubSpot Dashboard</a>
+    <span class="res-sep">·</span>
+    <a class="res-ramp" href="https://app.ramp.com/home/" target="_blank">💳 Ramp Card for Purchases</a>
+  </div>
 </header>
-
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--  RESOURCES BAR                                          -->
-<!-- ════════════════════════════════════════════════════════ -->
-<div class="resources-bar">
-  <span class="res-lbl">Resources</span>
-  <a class="res-btn res-btn-confluence" href="https://prayinc.atlassian.net/wiki/spaces/MARK/pages/4889149441/2026+Event+Tracker" target="_blank">📄 Confluence Pages</a>
-  <span class="res-sep">·</span>
-  <a class="res-btn res-btn-jira" href="https://prayinc.atlassian.net/jira/plans/247/scenarios/248/timeline?vid=286" target="_blank">✅ Jira Tasks</a>
-  <span class="res-sep">·</span>
-  <a class="res-btn res-btn-drive" href="https://drive.google.com/drive/u/0/folders/1-Q0qwO-yytuJ18P67QooHCNP7R4EAWUE?hl=pt-br" target="_blank">📁 Drive Repositories</a>
-  <span class="res-sep">·</span>
-  <a class="res-btn res-btn-internal" href="https://nayluchetti-tech.github.io/mktsaasevents/events/one-pagers/internal-briefs.html" target="_blank">🔒 Internal One-Pagers</a>
-  <span class="res-sep">·</span>
-  <a class="res-btn res-btn-external" href="https://nayluchetti-tech.github.io/mktsaasevents/events/one-pagers/external-onepagers.html" target="_blank">🌐 Customer-Facing One-Pagers</a>
-  <span class="res-sep">·</span>
-  <a class="res-btn res-btn-hubspot" href="https://app.hubspot.com/reports-dashboard/2592247/view/16725333" target="_blank">📊 HubSpot Dashboard</a>
-  <a class="res-ramp" href="https://app.ramp.com/home/" target="_blank">💳 Ramp Card</a>
-</div>
 
 <!-- ═══════════════════════════════════════════════════════ -->
 <!--  STATS BAR                                              -->
